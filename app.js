@@ -12,7 +12,11 @@ app.get("/", (req, res) => {
 })
 
 app.post("/", (req, res) => {
-    res.send("We live")
+    const firstName = req.body.firstName;
+    const lastName = req.body.lastName;
+    const email = req.body.email;
+
+    console.log(firstName, lastName, email);
 })
 app.listen(3000, () => {
     console.log("Server is running on port 3000")
