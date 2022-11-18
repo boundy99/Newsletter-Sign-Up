@@ -32,7 +32,7 @@ app.post("/", (req, res) => {
     const url = "https://us21.api.mailchimp.com/3.0/lists/cdf1d20c2d"
     const options = {
         method: "POST",
-        auth: "boundy99:6d404b3640f3a76acca6c4b061088119-us2"
+        auth: "boundy99:6d404b3640f3a76acca6c4b061088119-us21"
     }
     const request = https.request(url, options, (response) => {
         if (response.statusCode === 200) {
@@ -52,7 +52,7 @@ app.post("/failure", (req, res) => {
     res.redirect('/');
 })
 
-app.listen(3000, () => {
+app.listen(process.env.PORT || 3000, () => {
     console.log("Server is running on port 3000")
 })
 
