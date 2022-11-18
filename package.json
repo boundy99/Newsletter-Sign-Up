@@ -1,0 +1,19 @@
+{
+  "name": "newsletter",
+  "version": "1.0.0",
+  "description": "This project is about newsletter signup",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/boundy99/Newsletter.git"
+  },
+  "author": "Abdoulaye Boundy Djikine",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/boundy99/Newsletter/issues"
+  },
+  "homepage": "https://github.com/boundy99/Newsletter#readme"
+}
